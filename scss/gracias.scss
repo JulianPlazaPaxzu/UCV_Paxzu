@@ -1,0 +1,42 @@
+.cnt_gracias{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 90px;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  .check{
+    margin: 0 auto;
+    width: 60px;
+  }
+  .txt_gra_1{
+    font-family: 'MessinaModern-Regular';
+    font-size: 50px;
+    color: #233559;
+  }
+  .txt_gra_2{
+    margin: 0 auto;
+    width: 400px;
+    font-family: 'MessinaModern-Regular';
+    font-size: 20px;
+    color: #233559;
+  }
+  .btn_home{
+    margin: 0 auto;
+    width: 120px;
+    border: none;
+    padding: 10px;
+    font-size: 17px;
+    color: red;
+    background: white;
+    font-weight: 700;
+    border-color: red;
+    border-style: outset;
+    border-width: 2px;
+    text-decoration: none;
+  }
+  .btn_home a{
+    color: red;
+  }
+  

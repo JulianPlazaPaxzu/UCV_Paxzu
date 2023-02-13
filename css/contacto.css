@@ -1,0 +1,269 @@
+.cnt_contacto {
+  padding-top: 50px;
+  padding-bottom: 90px;
+}
+
+.contenedor_form_1 {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.img_ng_form {
+  background-image: url("../assets/diseno/contacto/iStock-1348.png");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center center;
+  left: 0;
+  top: 0;
+}
+
+.cnt_form {
+  display: flex;
+  background-size: cover;
+  width: 100%;
+  justify-content: flex-end;
+  gap: 30px;
+  min-height: 737px;
+  height: auto;
+  position: relative;
+  background: var(--c_secu);
+}
+
+.bg_form {
+  background: #E30512;
+  opacity: 0.9;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 23px;
+  padding: 64px 195px 65px 130px;
+  max-width: 500px;
+}
+
+.form {
+  position: relative;
+  right: 0;
+  opacity: 100%;
+  height: auto;
+  width: 100%;
+  /* max-width: 50%; */
+  display: flex;
+  /* padding-top: 20px; */
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.form_in {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+}
+.form_in ::placeholder {
+  color: white;
+}
+.form_in > div {
+  width: 100%;
+}
+
+.form_in input {
+  color: white;
+  width: 100%;
+  height: 50px;
+  border-style: solid;
+  border-color: white;
+  padding-left: 20px;
+  border-width: 1px;
+  font-size: 16px;
+}
+
+.form_in textarea {
+  color: white;
+  width: 100%;
+  height: 130px;
+  border-style: solid;
+  border-color: white;
+  padding-left: 20px;
+  padding-top: 20px;
+  border-width: 1px;
+  font-size: 16px;
+}
+
+.ctn_checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 90%;
+  gap: 15px;
+}
+
+.form_in .checkbox {
+  height: 20px;
+  width: auto;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+}
+
+label {
+  color: white;
+}
+
+.form_in select {
+  color: white;
+  width: 100%;
+  height: 50px;
+  border-style: solid;
+  border-color: white;
+  padding-left: 15px;
+  border-width: 1px;
+}
+
+.txt_form {
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  text-align: left;
+  overflow: hidden;
+  overflow-y: auto;
+  max-height: 120px;
+  font-size: 18px;
+  direction: rtl;
+  padding: 8px 20px;
+  box-sizing: border-box;
+}
+.txt_form::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+  border-radius: 0;
+}
+.txt_form::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: whitesmoke;
+}
+
+button {
+  width: 20%;
+  height: 50px;
+  border-style: solid;
+  background-color: #E30512;
+  border-width: 1px;
+  border-color: white;
+}
+
+label {
+  font-size: 14px;
+  color: white;
+}
+
+.cnt_redes {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.lbl_img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #233559;
+  gap: 16px;
+  flex-grow: 1;
+  width: 100%;
+}
+.lbl_img .img_lbl {
+  width: auto;
+}
+.lbl_img .img_lbl img {
+  width: auto;
+  max-width: 24px;
+}
+
+.lbl_img p {
+  text-align: left;
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.img_redes {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.btn_enviar button {
+  padding: 10px 60px;
+  width: auto;
+  height: auto;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+  .cnt_form {
+    flex-direction: column;
+  }
+  .img_ng_form {
+    position: static;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    background-size: cover;
+    background-position: top center;
+  }
+  .bg_form {
+    min-width: none;
+    width: 100%;
+    padding: 24px 32px;
+    background: none;
+    border: none;
+  }
+  .cnt_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 737px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    background: var(--c_secu);
+  }
+  .bg_form {
+    width: 90%;
+  }
+  .cnt_redes {
+    display: flex;
+    flex-direction: column;
+  }
+  .cnt_redes > * {
+    border-bottom: 1px solid grey;
+    padding: 16px;
+  }
+}
+@media screen and (max-width: 734px) {
+  .img_ng_form {
+    position: static;
+    width: 100%;
+    height: 100%;
+    min-height: 138px;
+    background-size: cover;
+    background-position: top center;
+  }
+}/*# sourceMappingURL=contacto.css.map */

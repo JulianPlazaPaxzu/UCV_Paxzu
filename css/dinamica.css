@@ -1,0 +1,839 @@
+main {
+  overflow: hidden;
+}
+main * {
+  color: #243659;
+}
+
+.img_top {
+  width: 100%;
+  height: auto;
+  max-height: 711px;
+  display: block;
+  margin: 0;
+}
+.img_top img {
+  object-fit: cover;
+}
+
+h1 {
+  font-family: "MessinaSans-Book";
+  font-size: 50px;
+}
+
+.title_page {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  z-index: 1;
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+  box-sizing: border-box;
+  top: -100px;
+  color: #233559;
+  font-size: 40px;
+}
+.title_page h1 {
+  font-size: 40px;
+}
+.title_page h4 {
+  font-size: 20px;
+  color: var(--c_secu);
+}
+
+.ctn_header_titulo .tiulo_seccion h1 {
+  color: #fff;
+}
+
+.ctn_secc {
+  padding: 50px 0;
+  width: 100%;
+}
+
+.txt_acordion {
+  padding: 20px 25px;
+  box-sizing: border-box;
+}
+
+.txt_Sec {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: left;
+  padding: 80px 0;
+}
+
+.titulo_sec {
+  font-size: 40px;
+  font-family: "MessinaSans-Book";
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.bloque_texto {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 41px 0;
+}
+
+.acordeon {
+  width: 100%;
+}
+.acordeon:last-child {
+  border-bottom: 1px solid var(--c_pri);
+}
+
+.accordion-body {
+  transition: none;
+  height: auto;
+  width: auto;
+}
+.accordion-body pos * {
+  padding-bottom: 12px;
+}
+
+.accordion-header {
+  padding: 0;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.accordion-header h1 {
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+.accordion-header span {
+  position: relative;
+}
+.accordion-header span:before {
+  content: "";
+  right: 0;
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 3px;
+  background: var(--c_secu);
+}
+.accordion-header span:after {
+  content: "";
+  right: 0;
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 3px;
+  background: var(--c_secu);
+  transition: all 0.3s ease-in-out;
+  transform: rotate(90deg);
+}
+.accordion-header.active span:after {
+  transform: rotate(0deg);
+}
+
+.bloque_desple {
+  text-align: left;
+  padding: 20px 0;
+  position: relative;
+  height: auto;
+  border-top: 1px solid var(--c_pri);
+}
+
+.multiple_text {
+  display: flex;
+  flex-direction: row;
+}
+.multiple_text div {
+  flex-grow: 1;
+  padding: 25px;
+  width: auto;
+  max-width: 600px;
+}
+.multiple_text h2 {
+  padding-bottom: 20px;
+}
+
+/*----Swipers-----*/
+/*---Color Img----*/
+.color_slider .slider_titulo1 {
+  color: forestgreen;
+}
+.color_slider .img_slider:after {
+  background-color: forestgreen;
+}
+.color_slider svg {
+  color: forestgreen;
+}
+
+.color_slider_1 .slider_titulo1 {
+  color: #A90DF2;
+}
+.color_slider_1 .img_slider:after {
+  background-color: #A90DF2;
+}
+.color_slider_1 svg {
+  color: #A90DF2;
+}
+
+/*---botones_swipers-----*/
+.swiper_botones {
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+  width: 150px;
+}
+.swiper_botones .swiper-pagination {
+  position: absolute;
+  left: 10%;
+  width: auto;
+  top: 0;
+  bottom: 0;
+}
+.swiper_botones .swiper-button-prev {
+  left: 50%;
+  transform: scaleX(-1);
+}
+.swiper_botones .swiper-button-prev, .swiper_botones .swiper-button-next {
+  background: url("../assets/diseno/dinamica/btn_cta_slider.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 24px;
+  width: 24px;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+}
+
+.ctn_swiper {
+  height: auto;
+  max-height: 748px;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  padding-bottom: 100px;
+}
+
+.Swiper_Tipo1 p {
+  text-align: left;
+}
+.Swiper_Tipo1.swiper {
+  width: 100%;
+  height: 100%;
+  left: -50px;
+  overflow: visible;
+}
+.Swiper_Tipo1 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+.Swiper_Tipo1 .img_slider {
+  height: 100%;
+  height: 391px;
+  width: auto;
+}
+
+.Swiper_Tipo2 .swiper-wrapper {
+  padding-bottom: 30px;
+}
+.Swiper_Tipo2 p {
+  text-align: left;
+}
+.Swiper_Tipo2.swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+}
+.Swiper_Tipo2 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  max-width: 620px;
+  padding: 30px;
+}
+.Swiper_Tipo2 .slider_titulo1 {
+  padding-bottom: 15px;
+  font-size: 30px;
+}
+
+.Swiper_Tipo3 p {
+  text-align: left;
+}
+.Swiper_Tipo3.swiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 150px;
+  position: relative;
+  z-index: 0;
+}
+.Swiper_Tipo3 .swiper-slide {
+  text-align: left;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  max-width: 1010px;
+  padding: 0;
+  gap: 20px;
+}
+.Swiper_Tipo3 .slider_titulo1 {
+  padding-bottom: 15px;
+}
+.Swiper_Tipo3 .img_slider img {
+  height: 100%;
+  max-height: 334px;
+  width: auto;
+  max-width: 490px;
+}
+.Swiper_Tipo3 .link_slider {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.Swiper_Tipo4 .swiper-button-next, .Swiper_Tipo4 .swiper-button-prev {
+  background: url("../assets/diseno/dinamica/btn_ctaRed_slider.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.Swiper_Tipo4 .swiper-button-next {
+  transform: scaleX(-1);
+}
+.Swiper_Tipo4 .swiper-button-prev {
+  transform: scaleX(1);
+}
+.Swiper_Tipo4 p {
+  text-align: left;
+}
+.Swiper_Tipo4.swiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 150px;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+.Swiper_Tipo4 .swiper-slide {
+  text-align: left;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+  width: 50%;
+  max-width: 1010px;
+  padding: 0;
+  gap: 20px;
+  height: auto;
+}
+.Swiper_Tipo4 .img_slider {
+  height: 100%;
+  max-height: 600px;
+  max-width: 755px;
+  width: 100%;
+}
+.Swiper_Tipo4 .img_slider img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.Swiper_Tipo4 .swiper-pagination {
+  color: var(--c_secu);
+  background-color: var(--c_secu);
+}
+.Swiper_Tipo4 .swiper-pagination > * {
+  color: var(--c_secu);
+}
+
+.Swiper_Tipo5 {
+  z-index: 1;
+}
+.Swiper_Tipo5 p {
+  text-align: left;
+}
+.Swiper_Tipo5.swiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 150px;
+  left: -50px;
+}
+.Swiper_Tipo5 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  max-width: 427px;
+}
+.Swiper_Tipo5 .img_slider {
+  height: 100%;
+  height: 400px;
+}
+
+.Swiper_Tipo6 {
+  z-index: 1;
+}
+.Swiper_Tipo6 p {
+  text-align: left;
+}
+.Swiper_Tipo6.swiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 150px;
+  left: -50px;
+}
+.Swiper_Tipo6 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  max-width: 427px;
+  width: 100%;
+}
+.Swiper_Tipo6 .img_slider {
+  height: 100%;
+  height: 400px;
+}
+
+.img_slider img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img_slider:after {
+  content: " ";
+  background-color: var(--c_secu);
+  width: 13px;
+  height: 95PX;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.slider_titulo1 {
+  font-family: "MessinaModern-Bold";
+  color: var(--c_secu);
+  padding-top: 33px;
+  font-size: 40px;
+}
+
+.slider_titulo2 {
+  font-size: 30px;
+}
+
+.slider_descrip {
+  font-family: "MessinaSans-Light";
+  font-size: 20px;
+  padding-bottom: 13px;
+}
+
+.link_slider {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.link_slider a {
+  color: var(--c_secu);
+  text-decoration: underline;
+  position: relative;
+}
+.link_slider a:last-child:before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: red;
+  position: absolute;
+  left: -10px;
+}
+
+.grid_1, .grid_2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  gap: 20px;
+  padding: 0;
+}
+
+.grid_2 .titulo_grid {
+  font-size: 60px;
+  color: var(--c_secu);
+}
+.grid_2 .subtitulo_grid {
+  font-family: "MessinaSans-Book";
+  font-size: 25px;
+  color: var(--c_pri);
+}
+
+.bloque_grid {
+  height: 100%;
+  width: 100%;
+  max-width: 27%;
+  max-height: 200px;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 30px;
+  flex-grow: 1;
+  text-align: left;
+}
+.bloque_grid .slider_titulo1 {
+  font-size: 30px;
+  padding-bottom: 15px;
+  color: var(--c_secu);
+  padding: 0;
+}
+.bloque_grid .slider_titulo2 {
+  font-size: 25px;
+}
+
+.titulo_grid {
+  font-family: "MessinaSans-Book";
+  font-size: 30px;
+}
+
+.subtitulo_grid {
+  font-family: "MessinaModern";
+  font-size: 25px;
+  color: var(--c_secu);
+}
+
+.bloque_img {
+  display: flex;
+  background-color: #fff;
+  padding: 0;
+  gap: 20px;
+  max-height: 521px;
+  text-align: left;
+  width: 100%;
+}
+
+.img_bloque {
+  width: 50%;
+  height: auto;
+  flex-grow: 1;
+}
+.img_bloque img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.content_bloque {
+  width: 50%;
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 50px 75px;
+  overflow-y: scroll;
+  /* width */
+  /* Track */
+  /* Handle */
+}
+.content_bloque::-webkit-scrollbar {
+  width: 8px;
+}
+.content_bloque::-webkit-scrollbar-track {
+  background: transparent;
+}
+.content_bloque::-webkit-scrollbar-thumb {
+  background: var(--c_pri);
+  border-radius: 30px;
+}
+.content_bloque h2 {
+  padding-bottom: 20px;
+  font-size: 50px;
+  font-family: "#MessinaModern-Bold";
+}
+.content_bloque p {
+  font-size: 25px;
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /*
+  &::before{
+      content: "";
+      background-image: url("../assets/diseno/dinamica/iframe.png");
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 10;
+      pointer-events: none;
+  }
+  &:after{
+      content: "";
+      background-image: url("../assets/diseno/dinamica/btn_video.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 11;
+      pointer-events: none;
+  }*/
+}
+
+.iframe {
+  width: 1530px;
+  height: 788px;
+  position: relative;
+}
+
+.ctn_video {
+  width: 100%;
+}
+.ctn_video h1 {
+  font-size: 60px;
+  text-align: left;
+}
+
+.Swiper_Tipo5 .slider_descrip {
+  padding-top: 15px;
+}
+
+.Swiper_Tipo5 .swiper {
+  padding-bottom: 0;
+}
+
+.Swiper_Tipo6.swiper {
+  padding-bottom: 0;
+}
+
+@media (max-width: 1520px) {
+  .bloque_grid {
+    max-width: 44%;
+  }
+}
+@media (max-width: 1440px) {
+  .bloque_grid {
+    max-width: 40%;
+  }
+  .title_page h1 {
+    font-size: 2.5em;
+  }
+}
+@media (max-width: 1024px) {
+  .bloque_img {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-height: 1500px;
+  }
+  .img_bloque {
+    width: 100%;
+    height: auto;
+    flex-grow: 1;
+  }
+  .img_bloque img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+  .content_bloque {
+    width: 100%;
+    flex-grow: 1;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 900px) {
+  .title_page {
+    height: 161px;
+    top: -29px;
+    color: #233559;
+    font-size: 40px;
+  }
+  .title_page h4 {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .ctn_header_titulo .tiulo_seccion h1 {
+    font-size: 30px;
+  }
+  .tiulo_seccion {
+    margin: 0 25px;
+  }
+  .miga {
+    font-size: 13px;
+    top: -4px;
+  }
+  .txt_Sec {
+    padding: 0 0 25px;
+    gap: 0px;
+  }
+  .content_sec {
+    line-height: 25px;
+  }
+  .accordion-header h1 {
+    font-size: 18px;
+    padding: 0;
+  }
+  .titulo_sec {
+    font-size: 24px;
+  }
+  .title_page h1 {
+    font-size: 2em;
+  }
+  .bloque_grid {
+    max-width: 40%;
+  }
+  .accordion-header h1 {
+    font-size: 20px;
+  }
+  .txt_acordion {
+    font-size: 16px;
+  }
+  .txt_acordion h2 {
+    padding: 20px 0;
+  }
+  .Swiper_Tipo1 .img_slider {
+    height: 300px;
+    width: auto;
+  }
+  .multiple_text {
+    flex-wrap: wrap;
+  }
+  .Swiper_Tipo2 .swiper-slide {
+    max-width: 292px;
+  }
+  .Swiper_Tipo3 .swiper-slide {
+    width: 337px;
+  }
+  .Swiper_Tipo3 .swiper-slide img {
+    max-width: 318px;
+  }
+  .Swiper_Tipo3 .swiper-slide {
+    flex-direction: column;
+  }
+  .conten_slider {
+    max-width: 90%;
+  }
+  .Swiper_Tipo6.swiper {
+    padding: 0;
+  }
+  .Swiper_Tipo6.swiper .slider_titulo2 {
+    font-size: 25px;
+  }
+  .tipo6_ctnSwiper {
+    padding-bottom: 30px;
+  }
+  .tipo3_ctnSwiper {
+    padding-bottom: 0px;
+  }
+  .Swiper_Tipo4.swiper {
+    padding-bottom: 59px;
+  }
+  .Swiper_Tipo4 .swiper_botones {
+    margin: 10px;
+  }
+  .ctn_swiper {
+    padding-top: 30px;
+  }
+  .slider_titulo1 {
+    font-size: 30px;
+  }
+  .titulo_sec h1 {
+    font-size: 30px;
+  }
+  .grid_1 {
+    gap: 0;
+  }
+  .grid_2 {
+    gap: 5;
+  }
+  .bloque_grid {
+    padding: 16px;
+  }
+  .content_bloque {
+    padding: 20px;
+  }
+  .content_bloque h2 {
+    font-size: 30px;
+  }
+  .content_bloque p {
+    font-size: 18px;
+  }
+  .bloque_img {
+    max-height: 700px;
+  }
+  .ctn_secc {
+    padding: 20px 0;
+  }
+  .Swiper_Tipo5ctn.titulo_sec {
+    font-size: 30px;
+    padding: 0;
+    padding-bottom: 30px;
+  }
+  .ctn_swiper.Swiper_Tipo5ctn {
+    padding-top: 0;
+  }
+  .Swiper_Tipo5 .slider_descrip {
+    padding-top: 20px;
+  }
+  .ctn_swiper.Swiper_Tipo5ctn {
+    padding-bottom: 0;
+  }
+  .Swiper_Tipo5.swiper {
+    padding-bottom: 0;
+  }
+  .iframe {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    min-height: 450px;
+  }
+}
+@media (max-width: 792px) {
+  .iframe {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    min-height: 250px;
+  }
+  .bloque_grid {
+    max-width: none;
+    width: 100%;
+  }
+  .title_page h1 {
+    font-size: 18px;
+    padding: 0;
+  }
+}/*# sourceMappingURL=dinamica.css.map */

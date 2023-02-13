@@ -1,0 +1,33 @@
+.cnt_terminos{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 90px;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  .txt_termi_1{
+    margin: 0 auto;
+    text-align: left;
+    width: 75%;
+    font-size: 20px;
+    color: #233559;
+    h4{
+    font-size: 24px;
+    color: #233559;
+    font-weight: 700;
+    padding-bottom: 5px;
+  }
+  }
+  
+  @media screen and (max-width: 768px){
+
+    h4{
+      font-size: 20px;
+    }
+    .txt_termi_1{
+      font-size: 16px;
+    }
+
+  }
+  
